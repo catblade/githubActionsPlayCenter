@@ -1,0 +1,11 @@
+name: hello world
+on:
+  schedule:
+  - cron: "5 * * * *"
+
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print a greeting
+        run: echo "Hello World!"
